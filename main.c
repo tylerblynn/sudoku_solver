@@ -386,10 +386,9 @@ int main(){
     load_grid(expert, &board);
 
     int original_entries = count_entries(&board);
-    int goAgain = 1;
-    int mini = 1;
+    int go_again = 1;
 
-    while(mini) {mini = fill_grid(&board);}
+    while(go_again) {go_again = fill_grid(&board);}
 
     //visual analytics for debugging and improving code   
     int new_entries = count_entries(&board);
